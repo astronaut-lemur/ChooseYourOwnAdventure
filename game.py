@@ -116,7 +116,7 @@ dictionary_of_questions = {
     'parent_happy': parent_happy, 'museum': museum,
     'bin_death': bin_death, 'medical_school': medical_school,
     'negative_nelly': negative_nelly, 'go_doctor': go_doctor,
-    'parents_anrgy': parents_angry, 'waiter': waiter,
+    'parents_angry': parents_angry, 'waiter': waiter,
     'astronaut': astronaut, 'empty': 'empty'
 }
 
