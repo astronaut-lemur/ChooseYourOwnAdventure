@@ -82,10 +82,10 @@ museum = [['Wow, somebody bought your art and it\'s on display in the museum!', 
 bin_death = [['You hid in a bin. How smart of you.', 'Press something. I don\'t care anymore.', 'yes', 'no', 'haha, bet you thought you could press anything there'],
             ['die', 'die', 'die']] #ooo
 
-medical_school = [['Fast forward a few years and you\'ve completed medical school! Good job!', 'Press \'enter\'.', ' ', 'enter', 'I\'m a rebel I do what I want'],
+medical_school = [['Fast forward a few years and you\'ve completed medical school! Good job!', 'Press \'enter\'.', '...', 'enter', 'I\'m a rebel I do what I want'],
             ['exit_game', 'exit_game', 'die']]
 
-negative_nelly = [['You\'re a negative nelly.', 'To become a positive polly, hit \'enter\'.', ' ', 'enter', 'I\'m not a negative nelly!'],
+negative_nelly = [['You\'re a negative nelly.', 'To become a positive polly, hit \'enter\'.', '...', 'enter', 'I\'m not a negative nelly!'],
             ['wake_up', 'wake_up', 'exit_game']]
 
 go_doctor = [['You go to the Doctors\'.', 'Does it inspire you to persue medicine?', 'yes', 'no', 'why would it'],
@@ -94,10 +94,10 @@ go_doctor = [['You go to the Doctors\'.', 'Does it inspire you to persue medicin
 parents_angry = [['Oops, you\'re parents are mad at you.', 'How do you react?', 'cry', 'leave', 'sleep'],
             ['cry', 'job_centre', 'wake_up']]
 
-waiter = [['You become a waiter! You lead a happy life and never go back to school again.', 'After retiring as head chef of a 4 star restaurant you press \'enter\'.', ' ', 'enter', 'actually it was five star'],
+waiter = [['You become a waiter! You lead a happy life and never go back to school again.', 'After retiring as head chef of a 4 star restaurant you press \'enter\'.', '...', 'enter', 'actually it was five star'],
             ['exit_game', 'exit_game', 'negative_nelly']]
 
-astronaut = [['You become the youngest astronaut in space, and the first to walk on Mars. Wow!', 'As you\'re watching the sunset on pluto, you decide to press \'enter\'.', ' ', 'enter', 'pluto isn\'t a real planet'],
+astronaut = [['You become the youngest astronaut in space, and the first to walk on Mars. Wow!', 'As you\'re watching the sunset on pluto, you decide to press \'enter\'.', '...', 'enter', 'pluto isn\'t a real planet'],
             ['exit_game', 'exit_game', 'negative_nelly']]
 
 dictionary_of_questions = {
@@ -130,9 +130,9 @@ def decision_set(build_up, question, action1, action2, action3):
         choice = raw_input(question + '\n')
         if (action1 in choice.lower()) or (choice == action1[0].lower()):
             return action1
-        elif (action2 in choice.lower()) or (choice == action2[0]):
+        elif (action2 in choice.lower()) or (choice == action2[0].lower()):
             return action2
-        elif (action3 in choice.lower()) or (choice == action3[0]):
+        elif (action3 in choice.lower()) or (choice == action3[0].lower()):
             return action3
         else:
             print 'I don\'t know what you want to do. Try ' + str('\'' + action1 + '\'') + ', or ' + str('\'' + action2 + '\'') + ', or ' + str('\'' + action3 + '.\'')
@@ -155,7 +155,7 @@ def exiting_game():
     exit_ = ask_and_proceed(exit_game)
     if exit_ == 'break':
         return 'break'
-    elif exit_ == 'wake_up':
+    elif exit_ == 'wake_up': ##change wakeup for what you want the first question to be
         return 'wake_up'
     else:
         print 'Well idk what you want. Lets restart. Next time try \'yes\' or \'no\'.'
@@ -196,4 +196,4 @@ def game_loop(start_question, setting, debug):
                     choice = 'wake_up'
 
 
-game_loop(wake_up, 'The Morning\n\n', 'no debug necessary doc')
+game_loop(wake_up, 'The Morning\n\n', 'who debugs things anymore')
