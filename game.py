@@ -7,8 +7,8 @@ wake_up = [['It\'s 6.30 AM. Your alarm is going off.', 'Do you wake up?', 'yes',
 exit_game = [['', 'Do you want to restart?', 'yes', 'no', 'restart'], 
             ['wake_up', 'break', 'wake_up' ]] #ooo
 
-go_class = [['You get to school on time!', 'Do you go straight to class or talk with your friends?', 'class', 'talk', 'walk and talk'], 
-            ['maths_bored', 'go_class_late', 'gossip_hurt']] #ooo
+go_class = [['You get to school on time!', 'Do you go straight to class or talk with your friends?', 'class', 'walk and talk', 'talk'], 
+            ['maths_bored', 'gossip_hurt', 'go_class_late']] #ooo
 
 drop_out = [['You didn\'t go to any classes today.', 'Do you drop out or catch up the next day?', 'drop out', 'catch up', 'quit'], 
             ['get_job', 'paper_cut', 'exit_game']] #ooo
@@ -127,7 +127,7 @@ choice = ''
 def decision_set(build_up, question, action1, action2, action3):
     while True:
         print build_up
-        choice = raw_input(question + '\n')
+        choice = raw_input(question + '\n').lower()
         if (action1 in choice.lower()) or (choice == action1[0].lower()):
             return action1
         elif (action2 in choice.lower()) or (choice == action2[0].lower()):
