@@ -90,3 +90,24 @@ waiter = [['You become a waiter! You lead a happy life and never go back to scho
 
 astronaut = [['You become the youngest astronaut in space, and the first to walk on Mars. Wow!', 'As you\'re watching the sunset on pluto, you decide to press \'enter\'.', '...', 'enter', 'pluto isn\'t a real planet'],
             ['exit_game', 'exit_game', 'negative_nelly']]
+
+
+dictionary_of_questions = {
+    'wake_up': wake_up, 'go_class': go_class,
+    'drop_out': drop_out, 'go_class_late': go_class_late,
+    'exit_game': exit_game, 'maths_bored': maths_bored,
+    'gossip_hurt': gossip_hurt, 'detention': detention,
+    'paper_cut': paper_cut, 'get_job': get_job,
+    'teacher_happy': teacher_happy, 'discovered_artist': discovered_artist,
+    'die': die, 'passion_for_medicine': passion_for_medicine,
+    'cut_infected': cut_infected,'parent_pity': parent_pity,
+    'fight_friend': fight_friend, 'cry': cry,
+    'suspended': suspended, 'teacher_pity': teacher_pity,
+    'job_centre': job_centre, 'go_detention': go_detention,
+    'fight_enemy': fight_enemy, 'go_home': go_home,
+    'parent_happy': parent_happy, 'museum': museum,
+    'bin_death': bin_death, 'medical_school': medical_school,
+    'negative_nelly': negative_nelly, 'go_doctor': go_doctor,
+    'parents_angry': parents_angry, 'waiter': waiter,
+    'astronaut': astronaut, 'empty': 'empty'
+}
