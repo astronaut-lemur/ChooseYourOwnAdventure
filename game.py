@@ -1,7 +1,21 @@
 ##question sets: build up, question, options: next steps
 
+import sys
+
+
 ###example set
-sets = __import__("EXAMPLE SETS") # This deals with the space in the filename
+if len(sys.argv) == 1:
+    print("Filename not specified, loading default examples")
+    sets = __import__("EXAMPLE SETS") # This deals with the space in the filename
+elif len(sys.argv) == 2:
+    try:
+        sets = __import__(sys.argv[-1])
+    except:
+        print("There was an error importing file \"%s\"" % sys.argv[-1])
+        exit(1)
+else:
+    print("Usage: python game.py [filename]")
+    exit(1)
 
 choice = ''
 
@@ -79,4 +93,4 @@ def game_loop(start_question, setting, debug):
                     choice = 'wake_up'
 
 
-game_loop(sets.wake_up, 'The Morning\n\n', '')
+game_loop(sets.first_scene, sets.opening_message, '')
