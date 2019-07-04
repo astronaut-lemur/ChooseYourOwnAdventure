@@ -1,77 +1,77 @@
 go_class = [['You get to school on time!', 'Do you go straight to class or talk with your friends?', 'class', 'walk and talk', 'talk'], 
-            ['maths_bored', 'gossip_hurt', 'go_class_late']] #ooo
+            ['maths_bored', 'gossip_hurt', 'go_class_late']] 
 
 drop_out = [['You didn\'t go to any classes today.', 'Do you drop out or catch up the next day?', 'drop out', 'catch up', 'quit'], 
-            ['get_job', 'paper_cut', 'exit_game']] #ooo
+            ['get_job', 'paper_cut', 'exit_game']]
 
 go_class_late = [['You\'re late!', 'Do you go to your first class or skip and go to your second?', 'go', 'skip', 'leave'], 
-            ['detention', 'detention', 'drop_out']] #ooo
+            ['detention', 'detention', 'drop_out']]
 
 maths_bored = [['You go to maths. It\'s incredibly boring.', 'Do you do your work?', 'yes', 'no', 'doodle'],
-            ['teacher_happy', 'detention', 'discovered_artist']] #ooo
+            ['teacher_happy', 'detention', 'discovered_artist']] 
 
 get_job = [['Well, time to enter the real world, kid.', 'Do you get a job?', 'no', 'yes', 'go back to school'],
-            ['die', 'job_centre', 'wake_up']] #ooo
+            ['die', 'job_centre', 'wake_up']] 
 
 paper_cut = [['You were studying so hard that you got a papercut!', 'What do you do?', 'plaster', 'nothing', 'cry'],
-            ['passion_for_medicine', 'cut_infected', 'parent_pity']] #ooo
+            ['passion_for_medicine', 'cut_infected', 'parent_pity']] 
 
 gossip_hurt = [['You\'re friend tells you some gossip about another friend.', 'Who do you tell?', 'everyone', 'nobody', 'friend'],
-            ['fight_friend', 'maths_bored', 'cry']] #ooo
+            ['fight_friend', 'maths_bored', 'cry']] 
 
 detention = [['You got put in detention!', 'Do you go to detention or patch it?', 'go', 'patch', 'cry'],
-            ['go_detention', 'suspended', 'teacher_pity']] #ooo
+            ['go_detention', 'suspended', 'teacher_pity']] 
 
 teacher_happy = [['Your teacher is happy with you and someone calls you a TP.', 'What do you do?', 'fight', 'cry', 'ignore'],
-            ['fight_enemy', 'teacher_pity', 'go_home']] #ooo
+            ['fight_enemy', 'teacher_pity', 'go_home']] 
 
 discovered_artist = [['Your teacher sees your doodles and is amazed!', 'What do you do with your art?', 'frame it', 'bin it', 'sell it'],
-            ['parent_happy', 'go_home', 'museum']] #ooo
+            ['parent_happy', 'go_home', 'museum']] 
 
 die = [['Well, your decision lead to death. Good job.', 'Press \'y\', \'n\' or \'I\'m an idiot for dying and I promise I won\'t do it again\' to restart.', 'y', 'n', 'i'],
-            ['exit_game', 'exit_game', 'exit_game']] #ooo
+            ['exit_game', 'exit_game', 'exit_game']]
 
 passion_for_medicine = [['Wow, you\'re practically a doctor!', 'Do you follow your passion for medicine?', 'yes', 'no', 'what passion'],
-            ['medical_school', 'go_home', 'negative_nelly']] #ooo
+            ['medical_school', 'go_home', 'negative_nelly']] 
 
 cut_infected = [['Oh no! The cut got infected!', 'What do you do?', 'nothing', 'doctor', 'cry'],
-            ['die', 'go_doctor', 'cry']] #ooo
+            ['die', 'go_doctor', 'cry']] 
 
 parent_pity = [['You\'re parents take pity on you and send you to bed with some hot chocolate and a water bottle.', 'Press \'y\' to wake up tommorow.', 'y', 'n', 'sleep'],
-            ['wake_up', 'die', 'wake_up']] #ooo
+            ['wake_up', 'die', 'wake_up']]
 
 fight_friend = [['Your friend is mad at you!', 'What do you do?', 'apologise', 'fight', 'cry'],
-            ['go_class_late', 'fight_enemy', 'cry']] #ooo
+            ['go_class_late', 'fight_enemy', 'cry']]
 
 cry = [['You cry and it feels good to let out your emotions.', 'What do you do now?', 'cry', 'go home', 'hide'],
-            ['cry', 'go_home', 'bin_death']] #ooo
+            ['cry', 'go_home', 'bin_death']] 
 
 suspended = [['You got suspended!', 'When do you tell your parents?', 'asap', 'never', 'cry'],
-            ['parents_angry', 'go_home', 'cry']] #ooo
+            ['parents_angry', 'go_home', 'cry']] 
 
 teacher_pity = [['Your teacher notices that you\'re upset and wants to talk to your parents.', 'What do you say?', 'no', 'okay', 'go away'],
-            ['go_home', 'parent_pity', 'detention']] #ooo
+            ['go_home', 'parent_pity', 'detention']] 
 
 job_centre = [['You go to the job centre! They\'re advertising for waiters, astronauts and gladiators.', 'Which job do you choose?', 'waiter', 'astronaut', 'gladiator'],
-            ['waiter', 'astronaut', 'die']] #ooo
+            ['waiter', 'astronaut', 'die']] 
 
 go_detention = [['You go to detention.', 'Do you cause trouble?', 'yes', 'no', 'sleep'],
-            ['suspended', 'go_home', 'detention']] #ooo
+            ['suspended', 'go_home', 'detention']] 
 
 fight_enemy = [['Oh no, you\'ve gotten into a fight!', 'What do you do?', 'punch', 'bite', 'cry'],
-            ['detention', 'suspended', 'cry']] #ooo
+            ['detention', 'suspended', 'cry']] 
 
 go_home = [['You go home after a long, hard day.', 'To wake up tomorrow, press \'y\'.', 'yes', 'no', 'rebel'],
-            ['wake_up', 'exit_game', 'die']] #ooo
+            ['wake_up', 'exit_game', 'die']]
 
 parent_happy = [['Your parents are very pleased with you. You go to bed content that you\'ve made them proud.', 'To wake up tomorrow, press \'y\'.', 'yes', 'no', 'rebel'],
-            ['wake_up', 'exit_game', 'die']] #ooo
+            ['wake_up', 'exit_game', 'die']] 
 
 museum = [['Wow, somebody bought your art and it\'s on display in the museum!', 'Do you tell your parents?', 'yes', 'no', 'move out, cause your self sufficient now'],
-            ['parent_happy', 'go_home', 'die']] #ooo
+            ['parent_happy', 'go_home', 'die']]
 
 bin_death = [['You hid in a bin. How smart of you.', 'Press something. I don\'t care anymore.', 'yes', 'no', 'haha, bet you thought you could press anything there'],
-            ['die', 'die', 'die']] #ooo
+            ['die', 'die', 'die']]
 
 medical_school = [['Fast forward a few years and you\'ve completed medical school! Good job!', 'Press \'enter\'.', '...', 'enter', 'I\'m a rebel I do what I want'],
             ['exit_game', 'exit_game', 'die']]
