@@ -117,3 +117,6 @@ dictionary_of_questions = {
     'parents_angry': parents_angry, 'waiter': waiter,
     'astronaut': astronaut, 'empty': 'empty'
 }
+
+first_scene = wake_up
+opening_message = "The morning\n\n"
