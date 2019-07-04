@@ -1,3 +1,6 @@
+wake_up = [['It\'s 6.30 AM. Your alarm is going off.', 'Do you wake up?', 'yes', 'snooze', 'no'], 
+            ['go_class', 'go_class_late','drop_out']]
+
 go_class = [['You get to school on time!', 'Do you go straight to class or talk with your friends?', 'class', 'walk and talk', 'talk'], 
             ['maths_bored', 'gossip_hurt', 'go_class_late']] 
 
@@ -6,6 +9,9 @@ drop_out = [['You didn\'t go to any classes today.', 'Do you drop out or catch u
 
 go_class_late = [['You\'re late!', 'Do you go to your first class or skip and go to your second?', 'go', 'skip', 'leave'], 
             ['detention', 'detention', 'drop_out']]
+
+exit_game = [['', 'Do you want to restart?', 'yes', 'no', 'restart'], 
+            ['wake_up', 'break', 'wake_up' ]]
 
 maths_bored = [['You go to maths. It\'s incredibly boring.', 'Do you do your work?', 'yes', 'no', 'doodle'],
             ['teacher_happy', 'detention', 'discovered_artist']] 
