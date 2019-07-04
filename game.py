@@ -1,22 +1,12 @@
 ##question sets: build up, question, options: next steps
 
 ###example set
-wake_up = [['It\'s 6.30 AM. Your alarm is going off.', 'Do you wake up?', 'yes', 'snooze', 'no'], 
-            ['go_class', 'go_class_late','drop_out']]
-
-exit_game = [['', 'Do you want to restart?', 'yes', 'no', 'restart'], 
-            ['wake_up', 'break', 'wake_up' ]]
-
-
-
-dictionary_of_questions = {
-    'wake_up': wake_up, 'exit_game': exit_game
-}
+sets = __import__("EXAMPLE SETS") # This deals with the space in the filename
 
 choice = ''
 
 
-## for defining the question set and asking it
+## for asking defining the question set and asking it
 def decision_set(build_up, question, action1, action2, action3):
     while True:
         print build_up
@@ -45,7 +35,7 @@ def ask_and_proceed(step):
         print 'Huh, you broke the system.'
 
 def exiting_game():
-    exit_ = ask_and_proceed(exit_game)
+    exit_ = ask_and_proceed(sets.exit_game)
     if exit_ == 'break':
         return 'break'
     elif exit_ == 'wake_up': ##change wakeup for what you want the first question to be
@@ -61,8 +51,8 @@ def game_loop(start_question, setting, debug):
         choice = ask_and_proceed(start_question)
         print choice
         while True:
-            choice = ask_and_proceed(dictionary_of_questions[choice])
-            if not (choice in dictionary_of_questions):
+            choice = ask_and_proceed(sets.dictionary_of_questions[choice])
+            if not (choice in sets.dictionary_of_questions):
                 print choice
                 print 'Not built this path yet!'
                 choice = 'exit_game'
@@ -77,8 +67,8 @@ def game_loop(start_question, setting, debug):
         choice = ask_and_proceed(start_question)
         while True:
             print '\n'            
-            choice = ask_and_proceed(dictionary_of_questions[choice])
-            if not (choice in dictionary_of_questions):
+            choice = ask_and_proceed(sets.dictionary_of_questions[choice])
+            if not (choice in sets.dictionary_of_questions):
                 print 'Not built this path yet!'
                 choice = 'exit_game'
             if choice == 'exit_game':
@@ -89,4 +79,4 @@ def game_loop(start_question, setting, debug):
                     choice = 'wake_up'
 
 
-game_loop(wake_up, 'The Morning\n\n', '')
+game_loop(sets.wake_up, 'The Morning\n\n', '')
