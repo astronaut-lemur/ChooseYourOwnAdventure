@@ -16,7 +16,7 @@ dictionary_of_questions = {
 choice = ''
 
 
-## for asking defining the question set and asking it
+## for defining the question set and asking it
 def decision_set(build_up, question, action1, action2, action3):
     while True:
         print build_up
