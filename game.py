@@ -1,6 +1,6 @@
 ##question sets: build up, question, options: next steps
 
-###school day set
+###example set
 wake_up = [['It\'s 6.30 AM. Your alarm is going off.', 'Do you wake up?', 'yes', 'snooze', 'no'], 
             ['go_class', 'go_class_late','drop_out']]
 
